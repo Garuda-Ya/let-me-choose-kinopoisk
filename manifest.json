@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Let me choose, Kinopoisk",
+    "version": "1.03",
+    "description": "Данное расширение поможет вам удобно настроить функция автопропуска заставки и концовки сериала, смотря его на сайте Кинопоиск",
+    "icons": {
+        "128": "logo128px.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://hd.kinopoisk.ru/*" ],
+            "js": [ "app.js" ]
+        }
+    ]
+ }
